@@ -1,7 +1,7 @@
-pkgbuilder
+scriptbuilder
 ==========
 
-A python based linux pkg builder
+A python based linux script-like package builder
 
 <h4>Usage:</h4>
 <pre>
