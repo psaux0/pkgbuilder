@@ -1,5 +1,0 @@
-#!/usr/bin/python env
-
-#subprocess for packaging, optparse for install
-import subprocess
-import optparse
