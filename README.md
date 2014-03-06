@@ -3,14 +3,15 @@ pkgbuilder
 
 A python based linux pkg builder
 
-Usage
+<h4>Usage:</h4>
 <pre>
   pkgbuilder.py -f /path/to/file -t type
 </pre>
 <code>/path/to/file</code> can be relative path.</code><br/>
-type must be one of "bin, run, sh" now.
+Type must be one of "bin, run, sh" now.
 
-Steps:
+
+<h4>Steps:</h4>
 <ol>
   <li>Compile a file into a tarball</li>
   <li>Write a shell script for installation</li>
