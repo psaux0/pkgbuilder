@@ -1,0 +1,17 @@
+#!/usr/bin/python env
+#Write the install shell script
+
+import string
+import name
+import subprocess
+
+script=string.Template("""tmpdir=$(pwd)
+                       sed -n -e '1,/^exit\ 0$/!p' $0 > "${tmpdir}/${name}.tar.gz" 2>/dev/null
+                       cd $tmpdir
+                       tar zxvf ${name}.tar.gz
+                       rm ${name}.tar.gz
+                       exit 0""")
+filename=sys.argv[1]
+f=open(name,'w')
+f.write(script.substitute(filename=name)))
+f.close()
