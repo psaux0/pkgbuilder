@@ -25,7 +25,7 @@ rm ${name}.tar.gz
 make
 make install
 make clean
-echo "${tmpdir} can be removed"                               
+echo "$${tmpdir} can be removed"                               
 exit 0
 """)
     filename=s
