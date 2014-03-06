@@ -9,7 +9,7 @@ A python based linux script-like package builder
 </pre>
 <code>/path/to/file</code> can be relative path.</code><br/>
 Type must be one of "bin, run, sh" now.<br/>
-Use <code>--from-src</code> to specify compile from source code
+Use <code>--from-src</code> to specify compiling from source code
 
 
 <br/>
