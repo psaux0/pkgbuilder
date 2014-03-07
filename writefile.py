@@ -34,8 +34,8 @@ def writeShell(s,**kargs):
     filename=s
     scriptname=''.join([filename,'.sh'])
     f=open(scriptname,'w')
-    r={'name':filename,'config':config}
-    if src:
+    r={'name':filename,'config':kargs['config']}
+    if kargs['src']:
         f.write(scripts['with_src'].substitute(r))
     else:
         f.write(scripts['non_src'].substitute(name=r['name']))
