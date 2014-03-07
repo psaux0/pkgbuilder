@@ -26,7 +26,7 @@ def produceScript(path,ftype,src):
     if src:
         makeConfig=raw_input('Please enter configuration for makefile: ')
 
-    scriptname=writeShell(pkgname,makeConfig,src)
+    scriptname=writeShell(pkgname,config=makeConfig,src=src)
     installfile_name=scriptname[:-3]+'_install'+bintype[ftype]
     with open(installfile_name,'w') as ifn:
         for line in fileinput.input([scriptname,tarballname]):
