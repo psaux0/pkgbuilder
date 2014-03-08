@@ -3,7 +3,7 @@
 
 import string
 
-scripts={
+_scripts={
     "non_src":string.Template("""#!/bin/bash
 tmpdir=$$(pwd)
 sed -n -e '1,/^exit 0$$/!p' $$0> "$${tmpdir}/${name}.tar.gz" 2>/dev/null
